@@ -2,25 +2,25 @@
   width: 450px;
   margin: 20px;
 }
-.main{
+.main {
   margin-bottom: 20px;
 }
-#thanks{
+#thanks {
   width: 50px;
   float: left;
   margin-right: 20px;
 }
-.titlePage{
-text-align: center;
-color: #ffffff;
-background-color: #2b2d42;
-padding: 5px;
+.titlePage {
+  text-align: center;
+  color: #ffffff;
+  background-color: #2b2d42;
+  padding: 5px;
 }
-.divTable{
+.divTable {
   margin-top: 20px;
 }
-.video{
-margin-top: 30px;
+.video {
+  margin-top: 30px;
 }
 .resultado {
   color: red;

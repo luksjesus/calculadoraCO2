@@ -35,45 +35,48 @@
                 <div style=" text-align: justify">
                     <img id="calculadora" src="imagens/calculator.png" alt="calculadora">
                     <h3>Calcular CO₂</h3>
-                    <form id="formulario">           
+                    <form id="formulario">
                         <div class="carro">
-                            <h6>Emissão de CO₂ por consumo de combustível:</h6>                       
+                            <h6>Emissão de CO₂ por consumo de combustível:</h6>
                             <p for="id_carro=">Selecione o veiculo usado em seu cotidiano:</p>
                             <select class="imput" id="carro" name="car">
                                 <option value="0.00021">carro a gasolina(motor ate 1.4)</option>
                                 <option value="0.00024">carro a gasolina(motor 1.5 ate 2.0)</option>
-                                <option value="0.0003">carro a gasolina(motor acima de  2.0)</option>
+                                <option value="0.0003">carro a gasolina(motor acima de 2.0)</option>
                                 <option value="0.00035"> pick-up(diesel)</option>
                                 <option value="0.000027">onibus</option>
-                            </select> <br>                        
+                            </select> <br>
                             <p for="id_nome=">Kilometragem do veiculo:</p>
-                            <input class="imput" type="text" name="nome" id="id_km" onchange="change()" required="" autofocus="" placeholder="Digite a km/mes"><br>
+                            <input class="imput" type="text" name="nome" id="id_km" onchange="change()" required=""
+                                autofocus="" placeholder="Digite a km/mes"><br>
                             <span>resultado tco2/mes:</span>
                             <p class="resultado" id="resultadoco2MesCarro"></p>
                             <span>resultado tco2/ano:</span>
                             <p class="resultado" id="resultadoco2ANOCarro"></p>
-        
+
                         </div>
                         <hr>
                         <div class="eletricidade">
                             <h6>Emissão de CO₂ por consumo de energia elétrica</h6>
                             <p for="id_Luz=">Consumo de energia:</p>
-                            <input class="imput" type="text" name="energy" id="id_energia" onchange="change()" required="" autofocus="" placeholder="Digite consumo de energia em kwh/mes"><br>
+                            <input class="imput" type="text" name="energy" id="id_energia" onchange="change()"
+                                required="" autofocus="" placeholder="Digite consumo de energia em kwh/mes"><br>
                             <span>resultado tco2/mes:</span>
                             <p class="resultado" id="resultadoEnergiaMes"></p>
                             <span>resultado tco2/ano:</span>
                             <p class="resultado" id="resultadoEnergiaAno"></p>
-                        </div>                    
-                         <hr>   
+                        </div>
+                        <hr>
                         <div class="gas">
                             <h6>Emissão de CO₂ por consumo de gás de cozinha</h6>
                             <p for="id_GAS=">Consumo de gás:</p>
-                            <input class="imput" type="text" name="gas" id="cozinha"  onchange="change()"required="" autofocus="" placeholder="Digite consumo gas de cozinha em botijões/mes"><br>
+                            <input class="imput" type="text" name="gas" id="cozinha" onchange="change()" required=""
+                                autofocus="" placeholder="Digite consumo gas de cozinha em botijões/mes"><br>
                             <span>resultado tco2/mes:</span>
                             <p class="resultado" id="resultadoGasButanoMes"></p>
                             <span>resultado tco2/ano:</span>
                             <p class="resultado" id="resultadoGasButanoAno"></p>
-                        </div>   
+                        </div>
                         <hr>
                         <div class="SomatorioTotal">
                             <h6><strong>Emissão total de CO₂:</strong></h6>
@@ -81,19 +84,20 @@
                             <p class="resultado" id="resultadoTotalMes"></p>
                             <span>resultado tco2/ano:</span>
                             <p class="resultado" id="resultadoTotalAno"></p>
-                        </div>      
-                   <input class="button" type="submit" value="Mais informações">                   
-                </form>
+                        </div>
+                        <input class="button" type="submit" value="Mais informações">
+                    </form>
                 </div>
             </section>
         </div>
     </main>
     <footer class="footer">
         <a href="https://www.pucminas.br/destaques/Paginas/default.aspx" target="_blank"><img class="contatos"
-            src="imagens/puc.png" alt="puc-minas" title="puc-minas"></a>
+                src="imagens/puc.png" alt="puc-minas" title="puc-minas"></a>
         <a href="https://github.com/luksjesus/calculadoraCO2" target="_blank"><img class="contatos"
-            src="imagens/github.png" alt="github" title="GitHub"></a>
+                src="imagens/github.png" alt="github" title="GitHub"></a>
     </footer>
     <script src="app.js"></script>
 </body>
+
 </html>
