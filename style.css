@@ -1,0 +1,220 @@
+.imagens {
+  width: 450px;
+  margin: 20px;
+}
+.main{
+  margin-bottom: 20px;
+}
+#thanks{
+  width: 50px;
+  float: left;
+  margin-right: 20px;
+}
+.titlePage{
+text-align: center;
+color: #ffffff;
+background-color: #2b2d42;
+padding: 5px;
+}
+.divTable{
+  margin-top: 20px;
+}
+.video{
+margin-top: 30px;
+}
+.resultado {
+  color: red;
+  font-size: small;
+}
+#calculadora {
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+#formulario p {
+  margin: 0;
+}
+#formulario {
+  margin-bottom: 10px;
+}
+.imput {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  position: relative;
+}
+head {
+  font-family: Fantasy;
+  display: none;
+  position: relative;
+  min-height: 100%;
+}
+html {
+  height: 100%;
+}
+.menu a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #2a9d8f;
+}
+.header a {
+  font-family: Fantasy;
+  color: #ffffff;
+  font-family: Fantasy;
+}
+
+.logo {
+  width: 45px;
+  float: left;
+  clear: both;
+  margin-left: 30px;
+  max-width: 300px;
+}
+
+.menu {
+  margin-left: 70%;
+}
+.header {
+  font-family: Fantasy;
+  background: #2a9d8f;
+  color: #2a9d8f;
+  padding: 15px;
+  margin-bottom: 20px;
+  overflow: auto;
+  clear: both;
+}
+.menu1 {
+  font-family: Fantasy;
+  background: #2a9d8f;
+  top: 40px;
+  left: 50%;
+}
+.footer {
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: #2a9d8f;
+  padding: 20px;
+  color: #ffffff;
+  float: center;
+}
+.footer img {
+  width: 30px;
+  margin: 5px;
+}
+
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-position: 0px -50px;
+    overflow: auto;
+    padding-bottom: 65px;
+  }
+  .logo {
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  .header {
+    height: 50px;
+    background-position: 0px -100px;
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+  .logo {
+    width: 28px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    height: 50px;
+    top: 0px;
+    z-index: 999;
+    max-width: 100% !important;
+    overflow: auto;
+    padding-bottom: 50px;
+  }
+  .logo {
+    width: 30px;
+  }
+  .container_nav {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    margin-top: 140px;
+  }
+  .menu1 {
+    z-index: 1000;
+    margin-left: -320px;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 320px;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(42, 157, 143, 0.9);
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+  }
+  .menu1 a {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    z-index: 2000;
+  }
+  .menu-icon {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    line-height: 60px;
+    color: #ffffff;
+    z-index: 2000;
+  }
+  #menuToggle:checked ~ label i:nth-child(2) {
+    display: block;
+  }
+  #menuToggle:checked ~ label i:first-child {
+    display: none;
+  }
+  #menuToggle:not(:checked) ~ label i:first-child {
+    display: block;
+  }
+  #menuToggle:not(:checked) ~ label i:nth-child(2) {
+    display: none;
+  }
+  #menuToggle:checked ~ nav {
+    height: 100%;
+  }
+  .menu-icon i {
+    font-size: 1.7em;
+  }
+}
